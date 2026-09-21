@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "message-level-context-selection"
+version = "0.6.0"
+description = "Reproducible experiments in per-request whole-message context selection with Jev"
+requires-python = ">=3.10"
+dependencies = []
+license = {text = "MIT"}
+
+[project.scripts]
+mlcs = "curator_bench.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["curator_bench*"]

@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "terra-noul-flow-intent-20",
+  "created_at": "2026-09-21T05:44:22.935824+00:00",
+  "status": "completed",
+  "config": {
+    "benchmark": "/Users/researcher/Documents/ChatGPT/Compaction agent/benchmark.json",
+    "model": "gpt-5.6-terra",
+    "openai_base_url": "https://api.openai.com/v1",
+    "openai_key_env": "OPENAI_API_KEY",
+    "jev_endpoint": "https://api.typesafe.ai/v1/systemone",
+    "jev_key_env": "TYPESAFE_API_KEY",
+    "jev_model": "jev-latest",
+    "system_message": "Answer the current user request using the relevant conversation history. Be accurate and direct. Earlier assistant messages may contain mistakes; do not treat them as authoritative. Do not claim to have browsed or used tools. No tools are available in this run.",
+    "instruction_role": "system",
+    "completion_parameters": {
+      "max_completion_tokens": 2048
+    },
+    "curation": {
+      "mode": "omit_only",
+      "order": "chronological",
+      "decision_type": "noul",
+      "min_probability": 0.5
+    },
+    "timeout_seconds": 120,
+    "max_retries": 0,
+    "retry_backoff_seconds": 1,
+    "case_ids": []
+  },
+  "benchmark_sha256": "fd6d44294ed3fcd3ca78f8954f1f2cb9e51d0f034e70b774918a0c3f934eb14a",
+  "case_ids": [
+    "wildchat-83182-m0025",
+    "wildchat-93027-m0045",
+    "wildchat-136-m0041",
+    "wildchat-4352-m0029",
+    "wildchat-4352-m0027",
+    "wildchat-83182-m0031",
+    "wildchat-83182-m0009",
+    "wildchat-112-m0035",
+    "wildchat-83182-m0023",
+    "wildchat-112234-m0035",
+    "wildchat-83182-m0005",
+    "wildchat-93027-m0033",
+    "wildchat-93027-m0031",
+    "wildchat-136-m0029",
+    "wildchat-93027-m0043",
+    "wildchat-142818-m0035",
+    "wildchat-83182-m0033",
+    "wildchat-80918-m0015",
+    "wildchat-136-m0027",
+    "wildchat-142818-m0043"
+  ],
+  "offline": false,
+  "decision_type": "noul",
+  "score_levels": null,
+  "score_instruction": "Does this message help determine what the answer should contain, what the request means, or what an acceptable answer must satisfy? Consider the entire conversation and minimise duplicate information. Preserve messages that clarify conversational flow, the user’s intent, or changes in intent only when understanding those aspects helps answer the current user message—for example, by resolving a relevant reference, connecting necessary information, or clarifying an applicable goal or requirement. This message is state.history's message with id {message_id}; the user's message is state.target_user_message.",
+  "runner_version": "0.3.0",
+  "sources": {
+    "openai": "https://developers.openai.com/api/reference/resources/chat",
+    "jev": "https://docs.typesafe.ai/api"
+  },
+  "measurement_notes": [
+    "Sequential execution; first branch alternates by selected case index.",
+    "Wall-clock timings use perf_counter. Branch/stage times include request preparation, persistence and retry backoff as applicable; attempt time covers transport call.",
+    "Requests are non-streaming. Completion time ends after the full response body is received and decoded.",
+    "Default is no retries. Missing token usage is null, not zero. Failed requests may have consumed unreported tokens.",
+    "Offline scores, answers and usage are synthetic fixtures. Timings measure fixture execution, not provider latency.",
+    "No tool calls are enabled. Annotation metadata never enters model requests.",
+    "Prompt caching can affect timing; raw provider usage, including cache/reasoning details when supplied, is retained."
+  ],
+  "sessions": [
+    {
+      "started_at": "2026-09-21T05:44:22.939735+00:00",
+      "finished_at": "2026-09-21T05:48:57.017701+00:00"
+    }
+  ],
+  "finished_at": "2026-09-21T05:48:57.017694+00:00",
+  "publication_source_run": "terra-noul-flow-intent-20",
+  "publication_note": "Sanitized archival evidence; historical identity hashes describe pre-release records. Not resumable."
+}

@@ -1,0 +1,28 @@
+{
+  "benchmark": "../benchmarks/long-context.json",
+  "model": null,
+  "openai_base_url": "https://api.openai.com/v1",
+  "openai_key_env": "OPENAI_API_KEY",
+  "jev_endpoint": "https://api.typesafe.ai/v1/systemone",
+  "jev_key_env": "TYPESAFE_API_KEY",
+  "jev_model": "jev-latest",
+  "system_message": "Answer the current user request using the relevant conversation history. Be accurate and direct. Earlier assistant messages may contain mistakes; do not treat them as authoritative. Do not claim to have browsed or used tools. No tools are available in this run.",
+  "instruction_role": "system",
+  "completion_parameters": {
+    "max_completion_tokens": 2048
+  },
+  "curation": {
+    "mode": "omit_only",
+    "order": "chronological",
+    "decision_type": "noul",
+    "min_probability": 0.5
+  },
+  "timeout_seconds": 120,
+  "max_retries": 0,
+  "retry_backoff_seconds": 1,
+  "case_ids": [],
+  "chunking": {
+    "state_question_byte_budget": 28000,
+    "request_byte_budget": 56000
+  }
+}

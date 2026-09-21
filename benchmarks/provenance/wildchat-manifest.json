@@ -1,0 +1,46 @@
+{
+  "dataset": "allenai/WildChat",
+  "config": "default",
+  "split": "train",
+  "files": [
+    {
+      "path": "sources/wildchat/metadata.json",
+      "url": "https://huggingface.co/api/datasets/allenai/WildChat",
+      "sha256": "7c2aca421b5644f4722e741a33152666542651fd385983b5fba84d62b243ab7a",
+      "bytes": 4032,
+      "retrieved_at": "2026-09-20T22:41:06.064001+00:00"
+    },
+    {
+      "path": "sources/wildchat/README.md",
+      "url": "https://huggingface.co/datasets/allenai/WildChat/resolve/f66566ceaaeb619dd98ffb0f3bf3ce1f86775ac4/README.md",
+      "sha256": "6df01b7c787753ba40054257dd0573e3625cb292b72e55735b6f9a11da67466f",
+      "bytes": 7806,
+      "retrieved_at": "2026-09-20T22:41:06.521361+00:00"
+    },
+    {
+      "path": "sources/wildchat/LICENSE.md",
+      "url": "https://huggingface.co/datasets/allenai/WildChat/resolve/f66566ceaaeb619dd98ffb0f3bf3ce1f86775ac4/LICENSE.md",
+      "sha256": "a7c7f6bdb20d261b8726c7594afb5832b36926e0cabfa116c41f58625bbc776c",
+      "bytes": 19947,
+      "retrieved_at": "2026-09-20T22:41:07.004075+00:00"
+    },
+    {
+      "path": "sources/wildchat/viewer-response.json",
+      "url": "https://datasets-server.huggingface.co/filter?dataset=allenai%2FWildChat&config=default&split=train&where=%22turn%22+%3E%3D+20+AND+%22language%22+%3D+%27English%27&offset=0&length=100",
+      "sha256": "e9d24ec526ef925ba580f234e97e537f6c60cf754cb7485183ca0188fd1b52bd",
+      "bytes": 6977539,
+      "retrieved_at": "2026-09-20T22:40:22.119255+00:00"
+    }
+  ],
+  "errors": [
+    "The read operation timed out"
+  ],
+  "observed_revision": "f66566ceaaeb619dd98ffb0f3bf3ce1f86775ac4",
+  "declared_license": "odc-by",
+  "rows_downloaded": 100,
+  "matching_rows": 802,
+  "partial": false,
+  "truncated_rows": 0,
+  "recovery": "Retained successful initial request after repeat timed out.",
+  "snapshot_note": "Viewer request uses current main, not a pinned revision; SHA256 identifies this exact snapshot."
+}

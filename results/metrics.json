@@ -1,0 +1,41 @@
+[
+  {
+    "dataset": "wildchat",
+    "completed_pairs": 20,
+    "baseline_main_input_tokens": 48881,
+    "curated_main_input_tokens": 13309,
+    "main_input_reduction_pct": 72.77265195065567,
+    "jev_input_tokens": 137683,
+    "baseline_cost_usd": 0.1043986,
+    "curated_cost_usd": 0.130753686,
+    "baseline_mean_seconds": 6.547149146016454,
+    "curated_mean_seconds": 7.129010822961573,
+    "truncated_outputs": 0
+  },
+  {
+    "dataset": "long-context",
+    "completed_pairs": 9,
+    "baseline_main_input_tokens": 899076,
+    "curated_main_input_tokens": 16756,
+    "main_input_reduction_pct": 98.13630883262373,
+    "jev_input_tokens": 1587513,
+    "baseline_cost_usd": 2.3123805,
+    "curated_cost_usd": 0.15021704600000002,
+    "baseline_mean_seconds": 9.942458254556792,
+    "curated_mean_seconds": 13.836105129875554,
+    "truncated_outputs": 1
+  },
+  {
+    "dataset": "tool-use",
+    "completed_pairs": 2,
+    "baseline_main_input_tokens": 17110,
+    "curated_main_input_tokens": 9121,
+    "main_input_reduction_pct": 46.69199298655757,
+    "jev_input_tokens": 43416,
+    "baseline_cost_usd": 0.05212,
+    "curated_cost_usd": 0.033094972,
+    "baseline_mean_seconds": 7.725402062525973,
+    "curated_mean_seconds": 7.7377744789700955,
+    "truncated_outputs": 0
+  }
+]

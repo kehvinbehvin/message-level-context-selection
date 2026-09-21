@@ -1,0 +1,65 @@
+[
+  {
+    "case_id": "dataset-navigation",
+    "oversized_groups": [
+      {
+        "message_ids": [
+          "m0007",
+          "m0008"
+        ],
+        "state_plus_longest_question_bytes": 42817,
+        "request_bytes": 43520
+      },
+      {
+        "message_ids": [
+          "m0020",
+          "m0021"
+        ],
+        "state_plus_longest_question_bytes": 30500,
+        "request_bytes": 31203
+      }
+    ]
+  },
+  {
+    "case_id": "runner-readiness",
+    "oversized_groups": [
+      {
+        "message_ids": [
+          "m0005",
+          "m0006"
+        ],
+        "state_plus_longest_question_bytes": 30452,
+        "request_bytes": 31155
+      }
+    ]
+  },
+  {
+    "case_id": "jev-request-structure",
+    "oversized_groups": [
+      {
+        "message_ids": [
+          "m0005",
+          "m0006"
+        ],
+        "state_plus_longest_question_bytes": 30537,
+        "request_bytes": 31240
+      },
+      {
+        "message_ids": [
+          "m0077",
+          "m0078"
+        ],
+        "state_plus_longest_question_bytes": 30989,
+        "request_bytes": 31692
+      }
+    ]
+  },
+  {
+    "case_id": "prompt-reconstruction",
+    "oversized_groups": []
+  },
+  {
+    "case_id": "chunking-limits",
+    "oversized_groups": []
+  }
+]

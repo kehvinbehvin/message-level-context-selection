@@ -1,0 +1,30 @@
+{
+  "offline": false,
+  "run_status": "completed_available_cases",
+  "expected_cases": 2,
+  "saved_cases": 2,
+  "paired_successes": 2,
+  "branches": {
+    "without_jev": {
+      "started_branches": 2,
+      "succeeded_branches": 2,
+      "input_tokens": 17110,
+      "observed_input_tokens": 17110,
+      "output_tokens": 779,
+      "observed_output_tokens": 779,
+      "observed_end_to_end_seconds": 15.450804125051945,
+      "mean_recorded_end_to_end_seconds": 7.725402062525973
+    },
+    "with_jev": {
+      "started_branches": 2,
+      "succeeded_branches": 2,
+      "input_tokens": 52537,
+      "observed_input_tokens": 52537,
+      "output_tokens": 3422,
+      "observed_output_tokens": 3422,
+      "observed_end_to_end_seconds": 15.475548957940191,
+      "mean_recorded_end_to_end_seconds": 7.7377744789700955
+    }
+  },
+  "note": "Observed subtotals are not full costs if usage is missing. Offline values are fixtures, not experimental results."
+}

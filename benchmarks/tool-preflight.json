@@ -1,0 +1,27 @@
+[
+  {
+    "case_id": "dataset-navigation",
+    "status": "blocked_by_byte_budget",
+    "reason": "Message or tool group starting at m0007 cannot fit with the target and instructions in one Jev chunk. No message was split or truncated."
+  },
+  {
+    "case_id": "runner-readiness",
+    "status": "blocked_by_byte_budget",
+    "reason": "Message or tool group starting at m0005 cannot fit with the target and instructions in one Jev chunk. No message was split or truncated."
+  },
+  {
+    "case_id": "jev-request-structure",
+    "status": "blocked_by_byte_budget",
+    "reason": "Message or tool group starting at m0005 cannot fit with the target and instructions in one Jev chunk. No message was split or truncated."
+  },
+  {
+    "case_id": "prompt-reconstruction",
+    "status": "ready",
+    "chunks": 2
+  },
+  {
+    "case_id": "chunking-limits",
+    "status": "ready",
+    "chunks": 2
+  }
+]

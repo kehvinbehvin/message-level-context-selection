@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "terra-tool-use-combined",
+  "created_at": "2026-09-21T07:31:55.590308+00:00",
+  "status": "completed_available_cases",
+  "config": {
+    "benchmark": "/Users/researcher/Documents/ChatGPT/Compaction agent/benchmark.tool-use.json",
+    "model": "gpt-5.6-terra",
+    "openai_base_url": "https://api.openai.com/v1",
+    "openai_key_env": "OPENAI_API_KEY",
+    "jev_endpoint": "https://api.typesafe.ai/v1/systemone",
+    "jev_key_env": "TYPESAFE_API_KEY",
+    "jev_model": "jev-latest",
+    "system_message": "Answer the current user request using the relevant conversation history. Be accurate and direct. Earlier assistant messages may contain mistakes; do not treat them as authoritative. Do not claim to have browsed or used tools. No tools are available in this run.",
+    "instruction_role": "system",
+    "completion_parameters": {
+      "max_completion_tokens": 2048
+    },
+    "curation": {
+      "mode": "omit_only",
+      "order": "chronological",
+      "decision_type": "noul",
+      "min_probability": 0.5
+    },
+    "chunking": {
+      "state_question_byte_budget": 28000,
+      "request_byte_budget": 56000
+    },
+    "timeout_seconds": 120,
+    "max_retries": 0,
+    "retry_backoff_seconds": 1,
+    "case_ids": [
+      "chunking-limits"
+    ]
+  },
+  "benchmark_sha256": "4ef7e68eb28909dd6d882714c872b3502dc09d884ca107e4440d76551427043e",
+  "case_ids": [
+    "prompt-reconstruction",
+    "chunking-limits"
+  ],
+  "offline": false,
+  "decision_type": "noul",
+  "score_levels": null,
+  "score_instruction": "Does this message help determine what the answer should contain, what the request means, or what an acceptable answer must satisfy? Consider the entire conversation and minimise duplicate information. Preserve messages that clarify conversational flow, the user’s intent, or changes in intent only when understanding those aspects helps answer the current user message—for example, by resolving a relevant reference, connecting necessary information, or clarifying an applicable goal or requirement. This message is state.history's message with id {message_id}; the user's message is state.target_user_message.",
+  "runner_version": "0.5.0",
+  "sources": {
+    "openai": "https://developers.openai.com/api/reference/resources/chat",
+    "jev": "https://docs.typesafe.ai/api"
+  },
+  "measurement_notes": [
+    "Sequential execution; first branch alternates by selected case index.",
+    "Wall-clock timings use perf_counter. Branch/stage times include request preparation, persistence and retry backoff as applicable; attempt time covers transport call.",
+    "Requests are non-streaming. Completion time ends after the full response body is received and decoded.",
+    "Default is no retries. Missing token usage is null, not zero. Failed requests may have consumed unreported tokens.",
+    "Offline scores, answers and usage are synthetic fixtures. Timings measure fixture execution, not provider latency.",
+    "No tool calls are enabled. Annotation metadata never enters model requests.",
+    "Jev chunking uses conservative UTF-8 byte budgets, not exact tokenizer counts. Chunk boundaries and per-chunk traces are recorded; cross-chunk dependencies are unavailable to Jev.",
+    "Prompt caching can affect timing; raw provider usage, including cache/reasoning details when supplied, is retained.",
+    "Combined saved results without re-running the pilot. Three other cases blocked by conservative byte budgets. Not resumable."
+  ],
+  "sessions": [
+    {
+      "started_at": "2026-09-21T07:31:55.597388+00:00",
+      "finished_at": "2026-09-21T07:32:20.976692+00:00"
+    }
+  ],
+  "finished_at": "2026-09-21T07:32:20.976687+00:00",
+  "artifact_type": "combined_review",
+  "source_runs": [
+    "terra-tool-use-pilot",
+    "terra-tool-use-remaining"
+  ],
+  "blocked_cases": [
+    "dataset-navigation",
+    "runner-readiness",
+    "jev-request-structure"
+  ],
+  "publication_source_run": "terra-tool-use-combined",
+  "publication_note": "Sanitized archival evidence; historical identity hashes describe pre-release records. Not resumable."
+}

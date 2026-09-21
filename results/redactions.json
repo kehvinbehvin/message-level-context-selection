@@ -1,0 +1,35 @@
+{
+  "note": "Release-only transformations; recorded token counts, timings, and scores are unchanged. Original historical hashes refer to pre-release bytes. Released checksums are in checksums.json. Exact model requests may differ by the documented redaction.",
+  "files": [
+    {
+      "file": "benchmarks/tool-use.json",
+      "original_file_sha256": "de071316a95cb6d36fb67993e2ed13f1a4225dd1dff1d59ad3f76c46b75570b8",
+      "transformation": "Known credential exact-match redaction and local home-username normalization."
+    },
+    {
+      "file": "results/tool-use/manifest.json",
+      "original_file_sha256": "cfdedf7cf1b0c3e283cda563dbb5869e1fe07d2fba5211414b4c6530fadcddc8",
+      "transformation": "Known credential exact-match redaction and local home-username normalization."
+    },
+    {
+      "file": "results/wildchat/manifest.json",
+      "original_file_sha256": "7229f83a257478fc26be87afd20ed58829e7c9a36310d28d849fb56eb447e398",
+      "transformation": "Known credential exact-match redaction and local home-username normalization."
+    },
+    {
+      "file": "results/long-context/manifest.json",
+      "original_file_sha256": "3809b065d4805a60a0d9aa503e11d670bfd8270a25c1c7329ed8055411bc0cd1",
+      "transformation": "Known credential exact-match redaction and local home-username normalization."
+    },
+    {
+      "file": "results/tool-use/cases/prompt-reconstruction.json",
+      "original_file_sha256": "206aae81800ab076423f1f301d36f0f779ab9cb750aec603e5ea45f1d99164d1",
+      "transformation": "Known credential exact-match redaction and local home-username normalization."
+    },
+    {
+      "file": "results/tool-use/cases/chunking-limits.json",
+      "original_file_sha256": "791f49e764c268d730ca8c03109448df683f8887572a3e8013b1b9d99c80f5a7",
+      "transformation": "Known credential exact-match redaction and local home-username normalization."
+    }
+  ]
+}

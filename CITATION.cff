@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this repository if you use its method, code, or released experimental records."
+title: "Message-Level Context Selection"
+authors:
+  - name: "kehvinbehvin"
+version: "0.6.0"
+date-released: "2026-09-21"
+url: "https://github.com/kehvinbehvin/message-level-context-selection"
+type: software
